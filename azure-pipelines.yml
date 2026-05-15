@@ -28,3 +28,11 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     ArtifactName: 'drop'
+
+- task: AzureWebApp@1
+  displayName: 'Desplegar en Azure'
+  inputs:
+    azureSubscription: 'Azure for Students (5973f7f4-d280-4fc6-b4da-a0d97d3b7e2e)'
+    appType: 'webAppWindows'
+    appName: 'inventario-api'
+    package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
