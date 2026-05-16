@@ -6,6 +6,7 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
+# ── CI: Integración Continua ──────────────────────────────
 steps:
 - task: UseDotNet@2
   inputs:
@@ -29,6 +30,7 @@ steps:
   inputs:
     ArtifactName: 'drop'
 
+# ── CD: Entrega Continua ───────────────────────────────────
 - task: AzureWebApp@1
   displayName: 'Desplegar en Azure'
   inputs:
