@@ -56,5 +56,15 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProductosController",
+    "Method": "ValorTotal",
+    "RelativePath": "api/Productos/valorTotal",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]

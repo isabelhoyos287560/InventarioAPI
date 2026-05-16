@@ -89,6 +89,18 @@
           }
         }
       }
+    },
+    "/api/Productos/valorTotal": {
+      "get": {
+        "tags": [
+          "Productos"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
