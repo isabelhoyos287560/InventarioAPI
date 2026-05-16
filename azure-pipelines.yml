@@ -6,17 +6,10 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-variables:
-  buildConfiguration: 'Release'
-  dotnetSdkVersion: '10.x'
-  azureServiceConnection: 'Azure for Students (5973f7f4-d280-4fc6-b4da-a0d97d3b7e2e)' 
-  webAppName: 'inventario-api' 
-
 steps:
 - task: UseDotNet@2
-  displayName: 'Use .NET SDK'
   inputs:
-    version: '$(dotnetSdkVersion)'
+    version: '10.x'
 
 - task: DotNetCoreCLI@2
   displayName: 'Compilar'
@@ -33,15 +26,13 @@ steps:
     zipAfterPublish: true
 
 - task: PublishBuildArtifacts@1
-  displayName: 'Publicar artefacto'
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
 
 - task: AzureWebApp@1
   displayName: 'Desplegar en Azure'
   inputs:
-    azureSubscription: '$(azureServiceConnection)'
+    azureSubscription: 'Azure for Students (5973f7f4-d280-4fc6-b4da-a0d97d3b7e2e)'
     appType: 'webAppWindows'
-    appName: '$(webAppName)'
+    appName: 'inventario-api'
     package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
