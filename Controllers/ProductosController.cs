@@ -40,4 +40,11 @@ public class ProductosController : ControllerBase
         productos.Remove(p);
         return Ok();
     }
+
+    [HttpGet("valorTotal")]
+    public IActionResult ValorTotal()
+    {
+        var total = productos.Sum(x => x.Precio * x.Stock);
+        return Ok(new { valorTotal = total });
+    }
 }
