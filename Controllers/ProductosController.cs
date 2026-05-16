@@ -10,6 +10,7 @@ public class ProductosController : ControllerBase
         new Producto { Id = 1, Nombre = "Laptop", Stock = 10, Precio = 2500000 },
         new Producto { Id = 2, Nombre = "Mouse", Stock = 50, Precio = 45000 },
         new Producto { Id = 4, Nombre = "Monitor", Stock = 8, Precio = 850000 },
+        new Producto { Id = 3, Nombre = "Cámara", Stock = 30, Precio = 500000 },
         new Producto { Id = 3, Nombre = "Teclado", Stock = 30, Precio = 120000 }
     };
 

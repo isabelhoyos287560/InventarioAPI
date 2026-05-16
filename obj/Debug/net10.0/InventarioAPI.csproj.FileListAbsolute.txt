@@ -35,3 +35,4 @@ C:\Users\Usuario\Documents\GitHub\InventarioAPI\obj\Debug\net10.0\refint\Inventa
 C:\Users\Usuario\Documents\GitHub\InventarioAPI\obj\Debug\net10.0\InventarioAPI.pdb
 C:\Users\Usuario\Documents\GitHub\InventarioAPI\obj\Debug\net10.0\InventarioAPI.genruntimeconfig.cache
 C:\Users\Usuario\Documents\GitHub\InventarioAPI\obj\Debug\net10.0\ref\InventarioAPI.dll
+C:\Users\Usuario\Documents\GitHub\InventarioAPI\obj\Debug\net10.0\InventarioAPI.sourcelink.json
