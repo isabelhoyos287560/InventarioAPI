@@ -3,6 +3,7 @@
 ## Integrantes del equipo
 
 - Isabel Johana Hoyos Echavarría
+- Camilo Andres Castrillon Quiroz
 
 ---
 
@@ -88,6 +89,7 @@ El pipeline se activa automáticamente con cada push a la rama `main`:
 |---|---|---|
 | GET | `/api/productos` | Retorna todos los productos |
 | GET | `/api/productos/{id}` | Retorna un producto por ID |
+| GET | `/api/productos/valor-total` | Retorna el valor total del inventario |
 | POST | `/api/productos` | Crea un nuevo producto |
 | PUT | `/api/productos/{id}` | Actualiza un producto |
 | DELETE | `/api/productos/{id}` | Elimina un producto |
