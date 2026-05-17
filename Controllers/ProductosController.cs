@@ -47,4 +47,11 @@ public class ProductosController : ControllerBase
         var total = productos.Sum(x => x.Precio * x.Stock);
         return Ok(new { valorTotal = total });
     }
+
+    [HttpGet("bajoStock")]
+    public IActionResult BajoStock()
+    {
+        var enAlerta = productos.Where(x => x.Stock < 10).ToList();
+        return Ok(new { umbral = 10, cantidad = enAlerta.Count, productos = enAlerta });
+    }
 }
