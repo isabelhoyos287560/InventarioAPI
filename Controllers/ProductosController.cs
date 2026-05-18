@@ -11,7 +11,7 @@ public class ProductosController : ControllerBase
         new Producto { Id = 2, Nombre = "Mouse", Stock = 50, Precio = 45000 },
         new Producto { Id = 4, Nombre = "Monitor", Stock = 8, Precio = 850000 },
         new Producto { Id = 3, Nombre = "Cámara", Stock = 30, Precio = 500000 },
-        new Producto { Id = 5, Nombre = "Teclado", Stock = 30, Precio = 120000 },
+        new Producto { Id = 5, Nombre = "Teclado", Stock = 30, Precio = 100000 },
         new Producto { Id = 6, Nombre = "Impresora", Stock = 15, Precio = 650000 }
     };
 
