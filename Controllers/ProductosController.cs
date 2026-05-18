@@ -1,4 +1,4 @@
-﻿using InventarioAPI;
+using InventarioAPI;
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
@@ -112,5 +112,25 @@ public class ProductosController : ControllerBase
     {
         var enAlerta = productos.Where(x => x.Stock < 10).ToList();
         return Ok(new { umbral = 10, cantidad = enAlerta.Count, productos = enAlerta });
+    }
+
+    [HttpPost("{id}/abastecer")]
+    public IActionResult Abastecer(int id, int cantidad)
+    {
+        var p = productos.FirstOrDefault(x => x.Id == id);
+
+        if (p is null)
+            return NotFound("Producto no encontrado");
+
+        if (cantidad <= 0)
+            return BadRequest("La cantidad a abastecer debe ser mayor a 0");
+
+        p.Stock += cantidad;
+
+        return Ok(new
+        {
+            mensaje = "Stock abastecido correctamente",
+            producto = p
+        });
     }
 }
