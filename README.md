@@ -6,6 +6,7 @@
 - Camilo Andres Castrillon Quiroz
 - Sebastian Medina Londoño
 - juan felipe Muñoz
+- Santiago Varela Jimenez
 
 ---
 
