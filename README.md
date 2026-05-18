@@ -36,7 +36,7 @@
 | Evento | Fecha |
 |---|---|
 | Primer despliegue CI/CD | 14 mayo 2026 |
-| Último despliegue exitoso | 16 mayo 2026 |
+| Último despliegue exitoso | 18 mayo 2026 |
 
 ---
 
