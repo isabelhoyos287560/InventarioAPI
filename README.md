@@ -14,8 +14,8 @@
 
 | Actividad | Enlace |
 |---|---|
-| Integración Continua (CI) | _(pendiente)_ |
-| Entrega Continua (CD) | _(pendiente)_ |
+| Integración Continua (CI) | https://www.youtube.com/watch?v=Zb-YmfBsIRo |
+| Entrega Continua (CD) | https://youtu.be/VivcIoHVtfs |
 
 ---
 
